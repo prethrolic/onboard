@@ -1,3 +1,7 @@
+h1 {
+  font-size: 40px;
+}
+
 .header {
   height: 700px;
   margin-top: 15rem;
@@ -133,6 +137,7 @@
   /*header*/
 
   h1 {
+    font-size: 70px;
     display: inline;
   }
   .top-spacer{
