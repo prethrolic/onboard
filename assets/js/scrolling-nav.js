@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  var navOffsetTop = $('.navbar').offset().top;
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -8,22 +8,34 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
-        }, 1000, "easeInOutExpo");
-        return false;
+          scrollTop: (target.offset().top - 90)
+        }, 1000, "easeInOutExpo", function () {
+        });
       }
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-  });
+  $(window).resize(function() {
+    $('body').removeClass('has-docked-nav');
+    navOffsetTop = $('.navbar').offset().top;
+    if ($(window).scrollTop() > navOffsetTop) {
+        $("body").addClass('has-docked-nav');
+    }
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
+    else {
+        $("body").removeClass('has-docked-nav');
+    }
+    }
+  )
+
+  $(window).scroll(function() {
+      if ($(window).scrollTop() > navOffsetTop) {
+          $("body").addClass('has-docked-nav');
+      }
+
+      else {
+          $("body").removeClass('has-docked-nav');
+      }
   });
 
 })(jQuery); // End of use strict
