@@ -9,8 +9,7 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 90)
-        }, 1000, "easeInOutExpo", function () {
-        });
+        }, 1000, "easeInOutExpo");
       }
     }
   });
@@ -21,7 +20,6 @@
     if ($(window).scrollTop() > navOffsetTop) {
         $("body").addClass('has-docked-nav');
     }
-
     else {
         $("body").removeClass('has-docked-nav');
     }

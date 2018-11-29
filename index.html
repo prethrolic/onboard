@@ -10,13 +10,17 @@
     <link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="assets/fonts/raleway.css" >
+    <link rel="stylesheet" type="text/css" href="assets/fonts/kanit.css" >
+    <link rel="stylesheet" href="assets/css/iziModal.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
     <title>Wasachon C.</title>
 
   </head>
 
+
   <body id="page-top" class="">
+
+
     <div class="container" id="top">
       <div class="top-spacer"></div>
       <section class="header">
@@ -39,7 +43,7 @@
                 <a class="navbar-link js-scroll-trigger" href="#assets">assets</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link js-scroll-trigger" href="#project">project</a>
+                <a class="navbar-link js-scroll-trigger" href="#projects">project</a>
               </li>
               <li class="navbar-item">
                 <a class="navbar-link js-scroll-trigger" href="#contact">get in touch</a>
@@ -60,7 +64,7 @@
         </div>
         <div class="row">
           <div class="offset-by-two eight columns">
-            <div class="section-text-wrap">I am Wasachon, but just call me Fon. </div>
+            <div class="section-text-wrap">I am Wasachon, but usually people would call me Fon. </div>
             <div class="section-text-wrap">
               a Thai programmer-in-education. third year in computer science at
               <a class="custom-link" href="https://www.kaist.ac.kr/html/en/index.html">
@@ -159,28 +163,146 @@
 
       <div class="divider"></div>
 
-      <!--Project-->
-      <section id="project">
+      <!--Project Header-->
+      <section id="projects">
         <div class="row">
           <div class="offset-by-four four columns">
             <div class="section-header-wrap">
-              <div class="section-header">previous projects</div>
+              <div class="section-header">recent projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <ul class="project-list">
+              <li class="project-item">
+                <a class="project-link js-scroll-trigger" href="#anoboard">anoboard</a>
+              </li>
+              <li class="project-item">
+                <a class="project-link js-scroll-trigger" href="#parkloei">parkloei</a>
+              </li>
+              <li class="project-item">
+                <a class="project-link js-scroll-trigger" href="#withstory">witstory</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!--Anoboard-->
+      <section id="anoboard">
+        <div class="row">
+          <div class="four columns img-wrap">
+            <img src="./assets/img/anoboard_thumbnail.png" class="u-max-full-width img-container" alt="anoboard">
+          </div>
+          <div class="offset-by-one seven columns project-wrap">
+            <div class="project-header">01. Anoboard (WIP)</div>
+            <div class="row">
+              <div class="color-palette">
+                <div class="color-circle1"></div>
+                <div class="color-circle2"></div>
+                <div class="color-circle3"></div>
+                <div class="color-circle4"></div>
+              </div>
+            </div>
+            <div class="project-text">
+              a prototype of social computing platform designed to strengthen the ties between weak acquaintances in college.
+              use one-sided anonimity to encourage interactions, and gamification for incentives
+            </div>
+            <div class="project-base">
+              base:&nbsp;react.js, firebase
+            </div>
+            <div class="row">
+              <div class="offset-by-two four columns">
+                <a class="button" href="https://github.com/prethrolic/anoboard-app">View on Github</a>
+              </div>
+              <div class="four columns">
+                <a class="button button-primary" href="http://143.248.140.158:7180/signin">Live Demo</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--Contact-->
-      <section id="contact">
-        <div class="header"></div>
+      <div class="divider"></div>
+
+      <!--PMA-->
+      <section id="parkloei">
+        <div class="row">
+          <div class="four columns img-wrap">
+            <img src="./assets/img/parkloei_thumbnail.png" class="u-max-full-width img-container" alt="anoboard">
+          </div>
+          <div class="offset-by-one seven columns project-wrap">
+            <div class="project-header">02. ปาร์คเลย | parkloei</div>
+            <div class="row">
+              <div class="color-palette">
+                <div class="color-circle5"></div>
+                <div class="color-circle6"></div>
+                <div class="color-circle7"></div>
+                <div class="color-circle8"></div>
+              </div>
+            </div>
+            <div class="project-text">
+               A thai startup on PMA (Parking Management Automator). work with a group of friends called wirystudio. construct landing pages backend infrastructure and provide technical consulting.
+           </div>
+           <div class="project-base">
+             base:&nbsp; MySQL, react.js, express.js, html/css
+           </div>
+            <div class="row">
+              <div class="offset-by-four four columns">
+                <button id="pma-gal-button">Project Gallery</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/public/jquery/jquery.min.js"></script>
-    <script src="assets/public/jquery-easing/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
+      <div id="modal-pma-01" class="iziModal">
+        <!-- Modal content -->
+        <div class="container">
+          <img class="u-max-full-width"src="./assets/img/SS_PMA_01.png"></img>
+        </div>
+      </div>
+
+      <div id="modal-pma-02" class="iziModal">
+        <!-- Modal content -->
+        <div class="container">
+          <img class="u-max-full-width"src="./assets/img/SS_PMA_02.png"></img>
+        </div>
+      </div>
+
+      <div id="modal-pma-03" class="iziModal">
+        <!-- Modal content -->
+        <div class="container">
+          <img class="u-max-full-width"src="./assets/img/SS_PMA_03.png"></img>
+        </div>
+      </div>
+
+      <div id="modal-pma-04" class="iziModal">
+        <!-- Modal content -->
+        <div class="container">
+          <img class="u-max-full-width"src="./assets/img/SS_PMA_04.png"></img>
+        </div>
+      </div>
+
+      <div id="modal-pma-05" class="iziModal">
+        <!-- Modal content -->
+        <div class="container">
+          <img class="u-max-full-width"src="./assets/img/SS_PMA_05.png"></img>
+        </div>
+      </div>
+
+      <!--Contact-->
 
 
+
+      <script src="assets/jquery/jquery/jquery.min.js"></script>
+      <script src="assets/jquery/jquery-easing/jquery.easing.min.js"></script>
+      <script src="assets/js/iziModal.min.js" type="text/javascript"></script>
+      <script src="assets/js/scrolling-nav.js"></script>
+      <script src="assets/js/modal.js"></script>
 
   </body>
 </html>

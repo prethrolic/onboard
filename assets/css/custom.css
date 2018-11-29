@@ -33,6 +33,13 @@ h1 {
   display: block;
 }
 
+.custom-link {
+  color: #A67F67;
+}
+
+a.custom-link:hover{
+  color: #222;
+}
 /*Navigation*/
 .navbar-list {
   list-style: none;
@@ -40,7 +47,7 @@ h1 {
   text-align: center; }
 .navbar-item {
   position: relative;
-  display: inline-block;
+  display: block;
   margin-bottom: 0;
   text-align: center }
 .navbar-link {
@@ -48,8 +55,6 @@ h1 {
   font-size: 12px;
   font-family: Raleway-Bold;
   letter-spacing: .2rem;
-  margin-right: 10px;
-  margin-left: 10px;
   text-decoration: none;
   line-height: 5.5rem;
   color: #A67F67;
@@ -77,6 +82,7 @@ h1 {
 
 .section-text-wrap {
   margin-bottom: 20px;
+  letter-spacing: 0.1rem;
   font-size: 1.4rem;
 }
 
@@ -94,7 +100,7 @@ h1 {
   padding: 30px 10px 35px 10px;
   margin-top: 5rem;
   height: 450px;
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -133,6 +139,113 @@ h1 {
   letter-spacing: .2rem;
 }
 
+
+.project-list {
+ display: none;
+}
+
+.img-wrap {
+  vertical-align: middle;
+  display: block;
+}
+
+.img-container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.color-palette {
+}
+
+.color-circle1,
+.color-circle2,
+.color-circle3,
+.color-circle4,
+.color-circle5,
+.color-circle6,
+.color-circle7,
+.color-circle8 {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 15px;
+  vertical-align: middle;
+}
+
+.color-circle1 {
+  background-color: white;
+  border: 1px solid #D7D2D2;
+}
+
+.color-circle2 {
+  background-color: #FFDFAC;
+}
+
+.color-circle3 {
+  background-color: #9F826B;
+}
+
+.color-circle4 {
+  background-color: #3D4751;
+}
+
+.color-circle5 {
+  background-color: white;
+  border: 1px solid #D7D2D2;
+}
+
+.color-circle6 {
+  background-color: #06ACEA;
+}
+
+.color-circle7 {
+  background-color: #1D8FD2;
+}
+
+.color-circle8 {
+  background-color: #60398C;
+}
+
+.project-wrap {
+  vertical-align: middle;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.project-header {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Raleway-Bold, Kanit;
+  letter-spacing: .3rem;
+  line-height: 3rem;
+  color: #222;
+  margin-top: 15px;
+}
+
+.project-text {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+}
+
+.project-base {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  letter-spacing: .2rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: #222;
+}
+
 @media (min-width: 750px) {
   /*header*/
 
@@ -163,6 +276,52 @@ h1 {
     text-align: center;
     width: 95%;
   }
+
+  .img-wrap {
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+  }
+
+  .project-wrap {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 0;
+    float: none;
+    text-align: center;
+  }
+
+  .project-list {
+    list-style: none;
+    display: block;
+    margin-bottom: 0;
+    text-align: center; }
+
+  .project-item {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center }
+
+  .project-link {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Raleway-Bold;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    line-height: 5.5rem;
+    color: #A67F67;
+   }
+
+   a.project-link:hover{
+     color: #222;
+   }
+
+   .project-header {
+     margin-top: 0;
+   }
+
   /*Navigation*/
   .navbar + {
     border-top-width: 0; }
@@ -185,6 +344,7 @@ h1 {
     text-align: center; }
   .navbar-item {
     position: relative;
+    display: inline-block;
     margin-bottom: 0;
     text-align: center }
   .navbar-link {
@@ -208,4 +368,15 @@ h1 {
     display: block; }
   .has-docked-nav .navbar > .container {
     width: 80%; }
+}
+
+/*Modal Overwrite*/
+.iziModal .iziModal-header.iziModal-noSubtitle .iziModal-header-title{
+    font-size: 15px;
+    text-transform: lowercase;
+    margin: 0;
+    text-align: center;
+    font-family: Raleway-Bold;
+    letter-spacing: 0.2rem;
+    font-weight:normal;
 }
