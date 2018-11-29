@@ -314,9 +314,8 @@ a.custom-link:hover{
     color: #A67F67;
    }
 
-   .project-link:hover{
+   a.project-link:hover{
      color: #222;
-     list-style: none;
    }
 
    .project-header {
