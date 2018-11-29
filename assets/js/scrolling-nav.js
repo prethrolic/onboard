@@ -29,10 +29,14 @@
   $(window).scroll(function() {
       if ($(window).scrollTop() > navOffsetTop) {
           $("body").addClass('has-docked-nav');
+          $(".navbar-list").animate({
+            right: 0
+          }, 1000);
       }
 
       else {
           $("body").removeClass('has-docked-nav');
+          $(".navbar-list").removeClass('u-pull-right');
       }
   });
 

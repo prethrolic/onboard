@@ -2,6 +2,15 @@ h1 {
   font-size: 40px;
 }
 
+.horizontal-line {
+  height: 1px;
+  background-color: #D7D2D2;
+  width: 80%;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
   height: 700px;
   margin-top: 15rem;
@@ -88,7 +97,7 @@ a.custom-link:hover{
 
 .social-icon {
   color: #D7D2D2;
-  font-size: 25px;
+  font-size: 30px;
   display: inline;
   margin-left: 15px;
   margin-right: 15px;
@@ -159,6 +168,7 @@ a.custom-link:hover{
 .color-palette {
 }
 
+.color-circle-white,
 .color-circle1,
 .color-circle2,
 .color-circle3,
@@ -176,38 +186,42 @@ a.custom-link:hover{
   vertical-align: middle;
 }
 
-.color-circle1 {
+.color-circle-white {
   background-color: white;
   border: 1px solid #D7D2D2;
 }
 
-.color-circle2 {
+.color-circle1 {
   background-color: #FFDFAC;
 }
 
-.color-circle3 {
+.color-circle2 {
   background-color: #9F826B;
 }
 
-.color-circle4 {
+.color-circle3 {
   background-color: #3D4751;
 }
 
-.color-circle5 {
-  background-color: white;
-  border: 1px solid #D7D2D2;
-}
 
-.color-circle6 {
+.color-circle4 {
   background-color: #06ACEA;
 }
 
-.color-circle7 {
+.color-circle5 {
   background-color: #1D8FD2;
 }
 
-.color-circle8 {
+.color-circle6 {
   background-color: #60398C;
+}
+
+.color-circle7 {
+  background-color: #f5CE56;
+}
+
+.color-circle8 {
+  background-color: #1D2226;
 }
 
 .project-wrap {
@@ -245,6 +259,27 @@ a.custom-link:hover{
   text-align: left;
   color: #222;
 }
+
+.contact-header {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: Raleway-Bold;
+  letter-spacing: .3rem;
+  line-height: 4rem;
+  color: #222;
+  display: none;
+}
+
+.contact-xs {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Raleway-Bold;
+  letter-spacing: .3rem;
+  line-height: 4rem;
+  color: #222;
+  display: block;
+}
+
 
 @media (min-width: 750px) {
   /*header*/
@@ -320,6 +355,14 @@ a.custom-link:hover{
 
    .project-header {
      margin-top: 0;
+   }
+
+   .contact-header {
+     display: block;
+   }
+
+   .contact-xs {
+     display: none;
    }
 
   /*Navigation*/
