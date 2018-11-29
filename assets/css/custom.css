@@ -2,6 +2,26 @@ h1 {
   font-size: 40px;
 }
 
+@keyframes fadeInFromBottom {
+    0% {
+        transform: translateY(10%);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .horizontal-line {
   height: 1px;
   background-color: #D7D2D2;
@@ -15,6 +35,10 @@ h1 {
   height: 600px;
   margin-top: 15rem;
   text-align: center;
+}
+
+.header-text-wrap {
+  animation: 0.5s ease-out 0s 1 fadeInFromBottom;
 }
 
 .top-spacer{
@@ -40,6 +64,7 @@ h1 {
   font-size: 5.0rem;
   margin-bottom: 15px;
   display: block;
+  animation: 1s ease-out 0s 1 fadeIn;
 }
 
 .custom-link {
@@ -399,6 +424,7 @@ a.custom-link:hover{
     text-decoration: none;
     line-height: 5.5rem;
     color: #222;
+    animation: 1.5s ease-out 0s 1 fadeIn;
    }
   .navbar-link.active {
     color: #A67F67;
