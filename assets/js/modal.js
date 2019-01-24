@@ -4,9 +4,50 @@ var main = function()
   var cstwidth = "80%";
   if(x.matches){
     cstwidth = "80%";
+    phwidth = "30%";
   } else {
     cstwidth = "65%";
+    phwidth = "80%";
   }
+
+  $("#modal-owlery-01").iziModal({
+    width: phwidth,
+    title: "Owlery's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "owlery",
+    loop: true,
+  });
+
+  $("#modal-owlery-02").iziModal({
+    width: phwidth,
+    title: "Owlery's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "owlery",
+    loop: true,
+  });
+
+  $("#modal-owlery-03").iziModal({
+    width: phwidth,
+    title: "Owlery's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "owlery",
+    loop: true,
+  });
 
   $("#modal-pma-01").iziModal({
     width: cstwidth,
@@ -21,7 +62,7 @@ var main = function()
     loop: true,
   });
 
-  $("#modal-pma-02").iziModal({
+  $("#modal-owlery-02").iziModal({
     width: cstwidth,
     title: "Parkloei's Screenshots",
     position: "absolute",
@@ -34,7 +75,7 @@ var main = function()
     loop: true,
   });
 
-  $("#modal-pma-03").iziModal({
+  $("#modal-owlery-03").iziModal({
     width: cstwidth,
     title: "Parkloei's Screenshots",
     position: "absolute",
@@ -45,6 +86,14 @@ var main = function()
     background: "black",
     group: "PMA",
     loop: true,
+  });
+
+  $('#owlery-gal-button').on('click', function() {
+    console.log("open modal");
+    event.preventDefault();
+    // $('#modal').iziModal('setZindex', 99999);
+    // $('#modal').iziModal('open', { zindex: 99999 });
+    $('#modal-owlery-01').iziModal('open');
   });
 
   $("#modal-pma-04").iziModal({
