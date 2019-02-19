@@ -319,10 +319,13 @@ a.social-icon:hover {
   display: block;
 }
 
-.pc-text {
-  display: none;
+.long-version {
+  display: block;
 }
 
+.sh-version {
+  display: none;
+}
 
 @media (min-width: 750px) {
   /*header*/
@@ -467,14 +470,20 @@ a.social-icon:hover {
     font-weight:normal;
 }
 
-@media(min-width: 1200px){
-  .pc-text{
-    display: inline;
+@media(max-width: 1200px){
+  .long-version {
+    display: none;
+  }
+  .sh-version {
+    display: block;
   }
 }
 
 @media(max-width: 850px){
-  .pc-text{
-    display: inline;
+  .long-version {
+    display: block;
+  }
+  .sh-version {
+    display: none;
   }
 }
