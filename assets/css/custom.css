@@ -207,7 +207,9 @@ a.social-icon:hover {
 .color-circle7,
 .color-circle8,
 .color-circle9,
-.color-circle10 {
+.color-circle10,
+.color-circle11,
+.color-circle12 {
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -261,6 +263,14 @@ a.social-icon:hover {
 
 .color-circle10 {
   background-color: #70CCC7;
+}
+
+.color-circle11 {
+  background-color: #FEC93F;
+}
+
+.color-circle12 {
+  background-color: #17181F;
 }
 
 .project-wrap {
