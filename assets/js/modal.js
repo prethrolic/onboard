@@ -10,6 +10,87 @@ var main = function()
     phwidth = "80%";
   }
 
+  $("#modal-shadow-01").iziModal({
+    width: cstwidth,
+    title: "Shadow Puppets's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "shadow",
+    loop: true,
+  });
+
+  $("#modal-shadow-02").iziModal({
+    width: cstwidth,
+    title: "Shadow Puppets's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "shadow",
+    loop: true,
+  });
+
+  $('#shadow-gal-button').on('click', function() {
+    console.log("open modal");
+    event.preventDefault();
+    // $('#modal').iziModal('setZindex', 99999);
+    // $('#modal').iziModal('open', { zindex: 99999 });
+    $('#modal-shadow-01').iziModal('open');
+  });
+
+  $("#modal-tsubaki-01").iziModal({
+    width: phwidth,
+    title: "Tsubaki's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "tsubaki",
+    loop: true,
+  });
+
+  $("#modal-tsubaki-02").iziModal({
+    width: phwidth,
+    title: "Tsubaki's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "tsubaki",
+    loop: true,
+  });
+
+  $("#modal-tsubaki-03").iziModal({
+    width: phwidth,
+    title: "Tsubaki's Screenshots",
+    position: "absolute",
+    headerColor: "black",
+    borderBottom: false,
+    bodyOverflow: true,
+    radius: 6,
+    background: "black",
+    group: "tsubaki",
+    loop: true,
+  });
+
+  $('#tsubaki-gal-button').on('click', function() {
+    console.log("open modal");
+    event.preventDefault();
+    // $('#modal').iziModal('setZindex', 99999);
+    // $('#modal').iziModal('open', { zindex: 99999 });
+    $('#modal-tsubaki-01').iziModal('open');
+  });
+
   $("#modal-owlery-01").iziModal({
     width: phwidth,
     title: "Owlery's Screenshots",
@@ -49,6 +130,14 @@ var main = function()
     loop: true,
   });
 
+  $('#owlery-gal-button').on('click', function() {
+    console.log("open modal");
+    event.preventDefault();
+    // $('#modal').iziModal('setZindex', 99999);
+    // $('#modal').iziModal('open', { zindex: 99999 });
+    $('#modal-owlery-01').iziModal('open');
+  });
+
   $("#modal-pma-01").iziModal({
     width: cstwidth,
     title: "Parkloei's Screenshots",
@@ -62,7 +151,7 @@ var main = function()
     loop: true,
   });
 
-  $("#modal-owlery-02").iziModal({
+  $("#modal-pma-02").iziModal({
     width: cstwidth,
     title: "Parkloei's Screenshots",
     position: "absolute",
@@ -75,7 +164,7 @@ var main = function()
     loop: true,
   });
 
-  $("#modal-owlery-03").iziModal({
+  $("#modal-pma-03").iziModal({
     width: cstwidth,
     title: "Parkloei's Screenshots",
     position: "absolute",
@@ -86,14 +175,6 @@ var main = function()
     background: "black",
     group: "PMA",
     loop: true,
-  });
-
-  $('#owlery-gal-button').on('click', function() {
-    console.log("open modal");
-    event.preventDefault();
-    // $('#modal').iziModal('setZindex', 99999);
-    // $('#modal').iziModal('open', { zindex: 99999 });
-    $('#modal-owlery-01').iziModal('open');
   });
 
   $("#modal-pma-04").iziModal({

@@ -32,8 +32,8 @@ h1 {
 }
 
 .header {
-  height: 600px;
-  margin-top: 15rem;
+  height: 100vh;
+  margin-top: 20vh;
   text-align: center;
 }
 
@@ -209,7 +209,15 @@ a.social-icon:hover {
 .color-circle9,
 .color-circle10,
 .color-circle11,
-.color-circle12 {
+.color-circle12,
+.color-circle13,
+.color-circle14,
+.color-circle15,
+.color-circle16,
+.color-circle17,
+.color-circle18,
+.color-circle19,
+.color-circle20 {
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -235,7 +243,6 @@ a.social-icon:hover {
 .color-circle3 {
   background-color: #3D4751;
 }
-
 
 .color-circle4 {
   background-color: #06ACEA;
@@ -271,6 +278,38 @@ a.social-icon:hover {
 
 .color-circle12 {
   background-color: #17181F;
+}
+
+.color-circle13 {
+  background-color: #F2E6D8;
+}
+
+.color-circle14 {
+  background-color: #9c6b4a;
+}
+
+.color-circle15 {
+  background-color: #533B33;
+}
+
+.color-circle16 {
+  background-color: #303030;
+}
+
+.color-circle17 {
+  background-color: #CAD2C5;
+}
+
+.color-circle18 {
+  background-color: #52796F;
+}
+
+.color-circle19 {
+  background-color: #354F52;
+}
+
+.color-circle20 {
+  background-color: #2F3E46;
 }
 
 .project-wrap {
