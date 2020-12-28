@@ -1,13 +1,13 @@
 var main = function()
 {
-  var x = window.matchMedia("(min-width: 750px)")
+  var x = window.matchMedia("(min-width: 768px)")
   var cstwidth = "80%";
   if(x.matches){
     cstwidth = "80%";
     phwidth = "30%";
   } else {
     cstwidth = "65%";
-    phwidth = "80%";
+    phwidth = "70%";
   }
 
   $("#modal-shadow-01").iziModal({

@@ -132,10 +132,32 @@ a.social-icon:hover {
   color: #A67F67;
 }
 
+.asc-logo-container {
+  width: 72px;
+  height: 72px;
+  margin: 2rem 1rem 0 1rem;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.asc-logo-alt {
+  border: 1px solid #A67F67;
+}
+
+.asc-logo-container:hover {
+  border: 1px solid #888;
+}
+
+.asc-logo-alt:hover {
+  border: 1px solid #FFD185 !important;
+}
+
 .box-wrap {
   border: 1px solid #A67F67;
   border-radius: 5px;
-  padding: 30px 10px 35px 10px;
+  padding: 30px 16px 35px 16px;
   margin-top: 5rem;
   height: 450px;
   width: 85%;
@@ -177,6 +199,38 @@ a.social-icon:hover {
   letter-spacing: .2rem;
 }
 
+.exp-wrap {
+  vertical-align: middle;
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.exp-header {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Raleway-Bold, Kanit;
+  letter-spacing: .3rem;
+  line-height: 2rem;
+  color: #222;
+}
+
+.exp-sub-header {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Raleway, Kanit;
+  letter-spacing: .3rem;
+  line-height: 2rem;
+  color: #222;
+}
+
+.exp-text {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  text-align: left;
+}
 
 .project-list {
  display: none;
@@ -342,7 +396,7 @@ a.social-icon:hover {
   font-size: 12px;
   font-family: Raleway-Bold;
   letter-spacing: .2rem;
-  line-height: 3rem;
+  line-height: 2rem;
   margin-bottom: 2rem;
   text-align: left;
   color: #222;
@@ -388,10 +442,17 @@ a.social-icon:hover {
   }
 
   /*content*/
+
+  .asc-logo-container {
+    width: 88px;
+    height: 88px;
+    margin: 2rem 2rem 0 2rem;
+  }
+
   .box-wrap {
     border: 1px solid #A67F67;
     border-radius: 5px;
-    padding: 20px 10px 25px 10px;
+    padding: 20px 16px 25px 16px;
     margin-top: 5rem;
     height: 450px;
     text-align: center;
